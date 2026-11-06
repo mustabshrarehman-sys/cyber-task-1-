@@ -147,7 +147,7 @@ Apply the changes.
 4. Start Kali Linux.
 5. Verify that Kali receives an IP address within the configured subnet.
    
-![VMware Settings](images/vmware-setting.png)
+![VMware Settings](/images/vmware-setting.png)
 
 Use the following command:
 
@@ -196,12 +196,12 @@ Connectivity between virtual machines can be tested using the ICMP `ping` comman
 ping 10.0.0.1
 ```
 
-### Expected Result
+### Result
 
-Successful replies indicate that the target is reachable through the virtual network.
+![Internet Test](images/internet-test.png)
 
 **Important:** Windows Firewall may block incoming ICMP echo requests by default. Therefore, a ping timeout does not always indicate a network configuration problem. Check the target firewall settings before troubleshooting the network.
-![Internet Test](images/internet-test.png)
+
 ---
 
 ## 📸 Snapshot Strategy
