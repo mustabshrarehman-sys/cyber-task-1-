@@ -112,6 +112,7 @@ Install 7-Zip to extract downloaded virtual machine archives, such as the Kali L
 
 Install VMware Workstation on the host machine and restart the system if prompted.
 
+![Kali Linux Desktop](images/kali-desktop.png)
 
 #### 3. Configure the NAT Network
 
@@ -145,12 +146,16 @@ Apply the changes.
 3. Choose **NAT (VMnet8)**.
 4. Start Kali Linux.
 5. Verify that Kali receives an IP address within the configured subnet.
+   
+![VMware Settings](images/vmware-settings.png)
 
 Use the following command:
 
 ```bash
 ip addr
 ```
+
+![Network Configuration](images/network-config.png)
 
 #### 6. Take a Baseline Snapshot
 
@@ -163,7 +168,7 @@ Navigate to:
 This snapshot will serve as a restore point before performing security experiments.
 
 ---
-
+![Snapshot Manager](images/snapshot-manager.png)
 ## IP Addressing Plan
 
 The following table shows example IP addresses for the virtual machines.
