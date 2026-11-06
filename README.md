@@ -56,7 +56,7 @@ Phase 1: Kali Linux
 Install 7-Zip to extract the downloaded virtual machine archives (for example, the Kali Linux .7z image).
 2. Install VMware Workstation
 Install VMware Workstation and restart the host if prompted.
- 
+<!-- Screenshot: ![VMware installation](images/01-vmware-install.png) -->
 3. Configure the NAT network
 In VMware, go to Edit → Virtual Network Editor → Change Settings, then configure the NAT network:
 Setting	Value
@@ -64,12 +64,12 @@ Network	VMnet8 (NAT)
 Subnet IP	10.0.0.0
 Subnet mask	255.255.255.0
 Apply the changes.
- 
+<!-- Screenshot: ![NAT configuration](images/02-nat-network.png) -->
 4. Import Kali Linux
 Extract the Kali Linux archive with 7-Zip, then open the .vmx file in VMware via File → Open.
 5. Configure Kali networking
-Set the Kali network adapter to VMnet8 (NAT) so it joins the lab network, then confirm it received an address in the 10.0.0.0/24 range.
- 
+Set the Kali network adapter to NAT so it joins the lab network, then confirm it received an address in the 10.0.0.0/24 range.
+<!-- Screenshots: ![Kali adapter](images/03-kali-adapter.png) ![Kali IP](images/04-kali-ip.png) -->
 6. Take a baseline snapshot
 Create a snapshot via VM → Snapshot → Take Snapshot so the machine can be restored before any security experiments.
 IP Addressing Plan
@@ -85,7 +85,7 @@ Connectivity Verification
 Confirm that machines can reach each other using ICMP:
 ping 10.0.0.X
 Replace 10.0.0.X with the address of the target VM. Successful replies confirm the virtual network is working. Note that Windows firewalls block ping by default, so a timeout may mean the target firewall is on rather than a network fault.
- 
+<!-- Screenshot: ![Ping test](images/05-ping-test.png) -->
 Snapshot Strategy
 Snapshots make it safe to break things. Recommended restore points:
 Snapshot	When to take it
@@ -94,9 +94,7 @@ Network configured	After IP and NAT settings are verified
 Kali configured	After tools and updates are in place
 Target ready	After the target machine is prepared
 Pre-exploitation	Immediately before any attack exercise
-
-
- 
+<!-- Screenshot: ![Snapshot manager](images/06-snapshots.png) -->
 Troubleshooting
 Problem	Suggested fix
 No Internet on Kali 2026.1 or later	Run sudo nmcli connection modify "eth0" ipv4.dad-timeout 0, then reconnect the interface
@@ -126,7 +124,7 @@ Roadmap
 Disclaimer
 This repository is for educational purposes and authorized security testing only. Only test systems and networks that you own or have explicit written permission to assess. The author accepts no responsibility for misuse.
 Author
-Mustabshra Rehman Cybersecurity & IT Student, Cybersecurity B084 Interests: Cybersecurity, Ethical Hacking, Networking
+Fatima Yousaf Cybersecurity & IT Student, Cybersecurity B082 Interests: Cybersecurity, Ethical Hacking, Networking
 References
 ●	Practical Lab Environment Setup for Pentesting, Ethical Hacking & Cybersecurity, NetworkWalks Academy (adapted from VirtualBox to VMware Workstation)
 
