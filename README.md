@@ -201,7 +201,7 @@ ping 10.0.0.1
 Successful replies indicate that the target is reachable through the virtual network.
 
 **Important:** Windows Firewall may block incoming ICMP echo requests by default. Therefore, a ping timeout does not always indicate a network configuration problem. Check the target firewall settings before troubleshooting the network.
-
+![Internet Test](images/internet-test.png)
 ---
 
 ## 📸 Snapshot Strategy
