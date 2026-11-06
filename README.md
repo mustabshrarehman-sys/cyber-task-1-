@@ -147,7 +147,7 @@ Apply the changes.
 4. Start Kali Linux.
 5. Verify that Kali receives an IP address within the configured subnet.
    
-![VMware Settings](images/network-config.png)
+![VMware Settings](images/vmware-setting.png)
 
 Use the following command:
 
