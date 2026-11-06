@@ -112,6 +112,7 @@ Install 7-Zip to extract downloaded virtual machine archives, such as the Kali L
 
 Install VMware Workstation on the host machine and restart the system if prompted.
 
+
 #### 3. Configure the NAT Network
 
 Open VMware Workstation and navigate to:
