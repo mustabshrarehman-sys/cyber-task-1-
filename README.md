@@ -147,7 +147,7 @@ Apply the changes.
 4. Start Kali Linux.
 5. Verify that Kali receives an IP address within the configured subnet.
    
-![VMware Settings](images/vmware-settings.png)
+![VMware Settings](cyber-task-1-/images/vmware-settings.png)
 
 Use the following command:
 
@@ -155,7 +155,7 @@ Use the following command:
 ip addr
 ```
 
-![Network Configuration](images/network-config.png)
+![Network Configuration](cyber-task-1-/images/network-config.png)
 
 #### 6. Take a Baseline Snapshot
 
@@ -168,7 +168,7 @@ Navigate to:
 This snapshot will serve as a restore point before performing security experiments.
 
 ---
-![Snapshot Manager](images/snapshot-manager.png)
+![Snapshot Manager](cyber-task-1-/images/snapshot-manager.png)
 ## IP Addressing Plan
 
 The following table shows example IP addresses for the virtual machines.
@@ -193,10 +193,8 @@ Connectivity between virtual machines can be tested using the ICMP `ping` comman
 ### From Kali Linux
 
 ```bash
-ping 10.0.0.X
+ping 10.0.0.1
 ```
-
-Replace `10.0.0.X` with the actual IP address of the target virtual machine.
 
 ### Expected Result
 
