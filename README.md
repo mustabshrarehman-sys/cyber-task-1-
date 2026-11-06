@@ -19,15 +19,13 @@ An isolated penetration-testing lab built on **VMware Workstation, Kali Linux, a
 3. [Architecture](#-architecture)
 4. [Prerequisites](#-prerequisites)
 5. [Setup Guide](#-setup-guide)
-6. [IP Addressing Plan](#-ip-addressing-plan)
-7. [Connectivity Verification](#-connectivity-verification)
-8. [Snapshot Strategy](#-snapshot-strategy)
-9. [Troubleshooting](#-troubleshooting)
-10. [Skills Demonstrated](#-skills-demonstrated)
-11. [Roadmap](#-roadmap)
-12. [Disclaimer](#-disclaimer)
-13. [Author](#-author)
-14. [References](#-references)
+6. [Connectivity Verification](#-connectivity-verification)
+7. [ Snapshot Strategy](#-snapshot-strategy)
+8. [ Troubleshooting](#-troubleshooting)
+9. [Skills Demonstrated](#-skills-demonstrated)
+10. [Disclaimer](#-disclaimer)
+11. [Author](#-author)
+12. [References](#-references)
 
 ---
 
@@ -147,7 +145,7 @@ Apply the changes.
 4. Start Kali Linux.
 5. Verify that Kali receives an IP address within the configured subnet.
    
-![VMware Settings](images/vmware-setting.png)
+![VMware Settings](images/vmware-settings.png)
 
 Use the following command:
 
@@ -169,22 +167,7 @@ This snapshot will serve as a restore point before performing security experimen
 
 ---
 ![Snapshot Manager](/images/snapshot-manager.png)
-## IP Addressing Plan
 
-The following table shows example IP addresses for the virtual machines.
-
-| Machine | Role | Example IP Address |
-|---|---|---|
-| Kali Linux | Attacker | `10.0.0.2` |
-| VM 2 | Target | `10.0.0.10` |
-| VM 3 | Target | `10.0.0.7` |
-| VM 4 | Target | `10.0.0.16` |
-| VM 5 | Target | `10.0.0.9` |
-| VM 6 | Target | `10.0.0.11` |
-
-**Note:** These are example addresses from the lab guide. Actual IP addresses may differ depending on the VMware DHCP configuration.
-
----
 
 ## Connectivity Verification
 
